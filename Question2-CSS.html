@@ -3,26 +3,47 @@
 <head>
    <title>Question 2 - CSS</title>
    <style>
+    .mainsection h1 {
+      color: black;
+      background-image: url('lab2/backgroundimg.gif');
+      padding: 10px;
+      text-align: left;
+      width: 300px;
+    }
+
     .mainsection a {
       text-decoration: none;
       color: #414040;
       outline: none;
+      transition: color 0.3s;
     }
-
-    a:focus {
-      color: brown;
+    .mainsection a {
+      text-decoration: none;
+      color: #414040;
+      outline: none;
+      transition: color 0.3s;
     }
-
-    a:hoover {
+    .mainsection a:hover {
       color: blue;
     }
 
-    
+    .mainsection a:active {
+      color: red;
+    }
+
+    .mainsection ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .mainsection li {
+      margin: 5px 0;
+    }
     </style>
 </head>
 <body>
 <div class="mainsection">
-<h1><img src="lab2/lab2-imageoftext.gif" alt="Shopping categories"></h1>
+<h1>Shopping categories</h1>
 
 <ul>
   <li><a href="#">Animals</a></li>
